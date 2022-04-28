@@ -40,8 +40,15 @@ Se toma en cuenta los siguientes requerimientos:
 Dependencias utilizadas en el proyecto y su proposito:
 - Jest: Ejecutar pruebas unitarias y verificar el correcto funcionamiento del codigo.
 
+ Como apunte, se debe modificar la version de Jest ya que hay un error al trabajar con GitHub actions, esto se realiza ejecutanto el siguiente comando:
+ >npm install jest@26.0.0 --save
+
+ - GitHub Actions: El archivo test.yml dentro del directorio ``/.github/workflows/`` automatiza las pruebas que implementamos de manera local con Jest para verificar que funcionen como se espera. Esta implementacion requiere de 
+ una modificacion a la version de Jest, vease el punto anterior.
+
 Componenetes:
-- Agregalos aqui
+
+- Reader: Dentro de el directorio ``/lib/utils/``, su funcion es la de leer el archivo Json que se utiliza como Data Base. Este archivo tiene su respectiva prueba dentro del directorio ``/test/utils/Reader.test.js``
 
 API, Cómo consultarla, qué formato va a responder, incluye ejemplos etc:
 - Agrega aqui
