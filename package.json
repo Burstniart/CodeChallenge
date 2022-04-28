@@ -1,0 +1,23 @@
+{
+  "name": "codechallenge",
+  "version": "1.0.0",
+  "description": "> Started at 12:20 on 04/28",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Burstniart/CodeChallenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Burstniart/CodeChallenge/issues"
+  },
+  "homepage": "https://github.com/Burstniart/CodeChallenge#readme",
+  "devDependencies": {
+    "jest": "^28.0.2"
+  }
+}
