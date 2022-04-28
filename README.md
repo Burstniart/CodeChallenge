@@ -48,7 +48,7 @@ Dependencias utilizadas en el proyecto y su proposito:
 
 Componenetes:
 
-- Reader: Dentro de el directorio ``/lib/utils/``, su funcion es la de leer el archivo Json que se utiliza como Data Base. Este archivo tiene su respectiva prueba dentro del directorio ``/test/utils/Reader.test.js``
+- Reader: Dentro de el directorio ``/lib/utils/``, su funcion es la de leer el archivo Json que se utiliza como Data Base. Este archivo tiene su respectiva prueba dentro del directorio ``/test/utils/Reader.test.js`` la cual llama al archivo ``testRun.json`` en la raiz del proyecto.
 
 API, Cómo consultarla, qué formato va a responder, incluye ejemplos etc:
 - Agrega aqui
