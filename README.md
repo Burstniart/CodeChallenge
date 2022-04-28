@@ -38,7 +38,7 @@ Se toma en cuenta los siguientes requerimientos:
 
 ### Readme
 Dependencias utilizadas en el proyecto y su proposito:
-- Agregalas aqui
+- Jest: Ejecutar pruebas unitarias y verificar el correcto funcionamiento del codigo.
 
 Componenetes:
 - Agregalos aqui
