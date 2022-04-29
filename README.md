@@ -1,5 +1,6 @@
 # CodeChallenge
-> Started at 12:20 on 04/28- pauses 14:30 on 04/28
+> Started at 12:20 on 04/28 - pauses 14:30 on 04/28
+> Resume at 8:48 on 04/28
 
 ## Objetivos al finalizar el proyecto:
 - Repo en GitHub para el proyecto
