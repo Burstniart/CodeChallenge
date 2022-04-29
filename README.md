@@ -1,6 +1,7 @@
 # CodeChallenge
 > Started at 12:20 on 04/28 - pauses 14:30 on 04/28
-> Resume at 20:48 on 04/28
+> Resume at 20:48 on 04/28 - end of code at 23:58
+> Documentation on API pending
 
 Este code challenge es parte de la formacion con LaunchX en Backend con Node JS
 
