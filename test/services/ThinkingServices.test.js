@@ -11,7 +11,13 @@ describe("Test suit for ThinkingService", () => {
     test("2) Get email from student if 'haceCertification': true on all students", () => {
         const certifieds = Reader.readJsonFile("./test/testRun.json")
         const theCertifieds = ThinkingServices.getAllCertificate(certifieds)
-        
+
         expect(theCertifieds[0]).toBe("Sexton@visualpartnership.xyz");
+    });
+    test("3) Check for enough credits, at least over 500", () => {
+        const enough = Reader.readJsonFile("./test/testRun.json")
+        const haveEnough = ThinkingServices.isItEnough(enough);
+
+        expect(haveEnough[0].id).toBe("6264d5d89f1df827eb84bb23")
     });
 });
