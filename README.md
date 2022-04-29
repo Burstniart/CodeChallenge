@@ -1,6 +1,6 @@
 # CodeChallenge
 > Started at 12:20 on 04/28 - pauses 14:30 on 04/28
-> Resume at 8:48 on 04/28
+> Resume at 20:48 on 04/28
 
 ## Objetivos al finalizar el proyecto:
 - Repo en GitHub para el proyecto
@@ -44,6 +44,8 @@ Se toma en cuenta los siguientes requerimientos:
 
  Como apunte, se debe modificar la version de Jest ya que hay un error al trabajar con GitHub actions, esto se realiza ejecutanto el siguiente comando:
  >npm install jest@26.0.0 --save
+
+ - ESLint: Mantener limpieza en el codigo, que este sea legible, calro y concizo en su escritura.
 
  - GitHub Actions: El archivo test.yml dentro del directorio ``/.github/workflows/`` automatiza las pruebas que implementamos de manera local con Jest para verificar que funcionen como se espera. Esta implementacion requiere de 
  una modificacion a la version de Jest, vease el punto anterior.

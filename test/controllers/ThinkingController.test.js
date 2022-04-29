@@ -10,7 +10,7 @@ describe("Test suit for Thinking Controller", () => {
         const certifieds = ThinkingController.getCertified();
 
         expect(certifieds[0]).toBe("Todd@visualpartnership.xyz");
-    })
+    });
     test("3) Testing isEnough method", () => {
         const enoughCredits = ThinkingController.isEnough(900);
         console.log(enoughCredits);
