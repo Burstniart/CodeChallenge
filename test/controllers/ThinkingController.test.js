@@ -6,9 +6,14 @@ describe("Test suit for Thinking Controller", () => {
 
         expect(thinkers[0].name).toBe("Warren");
     });
-    test("2) Testting getCertified method", () => {
+    test("2) Testing getCertified method", () => {
         const certifieds = ThinkingController.getCertified();
-        
+
         expect(certifieds[0]).toBe("Todd@visualpartnership.xyz");
     })
+    test("3) Testing isEnough method", () => {
+        const enoughCredits = ThinkingController.isEnough(500);
+
+        expect(enoughCredits[0].name).toBe("Warren");
+    });
 });
