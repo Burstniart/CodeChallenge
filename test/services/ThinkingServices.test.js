@@ -17,7 +17,7 @@ describe("Test suit for ThinkingService", () => {
     test("3) Check for enough credits, at least over 500", () => {
         const enough = Reader.readJsonFile("./test/testRun.json")
         const haveEnough = ThinkingServices.isItEnough(enough);
-
+        
         expect(haveEnough[0].id).toBe("6264d5d89f1df827eb84bb23")
     });
 });
