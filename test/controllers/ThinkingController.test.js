@@ -12,8 +12,8 @@ describe("Test suit for Thinking Controller", () => {
         expect(certifieds[0]).toBe("Todd@visualpartnership.xyz");
     })
     test("3) Testing isEnough method", () => {
-        const enoughCredits = ThinkingController.isEnough(500);
-
-        expect(enoughCredits[0].name).toBe("Warren");
+        const enoughCredits = ThinkingController.isEnough(900);
+        console.log(enoughCredits);
+        expect(enoughCredits[0].name).toBe("Phillips");
     });
 });
