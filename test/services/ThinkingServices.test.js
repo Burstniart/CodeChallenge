@@ -1,9 +1,11 @@
 const ThinkingServices = require("./../../lib/services/ThinkingServices");
+const Reader = require("./../../lib/utils/Reader");
 
 describe("Test suit for ThinkingService", () => {
     test("1) Get all students, full format", () => {
-        const thinkers = ThinkingServices.getAllStudents("./test/testRun.json")
-        console.log(thinkers[1]);
-        expect(thinkers[0].credits).toBe(508);
+        const thinkers = Reader.readJsonFile("./test/testRun.json")
+        const theThinkers = ThinkingServices.getAllStudents(thinkers)
+
+        expect(theThinkers[0].credits).toBe(508);
     });
 });
