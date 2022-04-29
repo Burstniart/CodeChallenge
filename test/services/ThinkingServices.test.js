@@ -8,4 +8,10 @@ describe("Test suit for ThinkingService", () => {
 
         expect(theThinkers[0].credits).toBe(508);
     });
+    test("2) Get email from student if 'haceCertification': true on all students", () => {
+        const certifieds = Reader.readJsonFile("./test/testRun.json")
+        const theCertifieds = ThinkingServices.getAllCertificate(certifieds)
+
+        expect(theCertifieds[0]).toBe("Sexton@visualpartnership.xyz");
+    });
 });
