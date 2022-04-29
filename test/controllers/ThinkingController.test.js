@@ -8,7 +8,7 @@ describe("Test suit for Thinking Controller", () => {
     });
     test("2) Testting getCertified method", () => {
         const certifieds = ThinkingController.getCertified();
-        console.log(certifieds);
+        
         expect(certifieds[0]).toBe("Todd@visualpartnership.xyz");
     })
 });
