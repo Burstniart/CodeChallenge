@@ -50,19 +50,19 @@ Se toma en cuenta los siguientes requerimientos:
 
 ### Componenetes:
 
-- Reader: Dentro de el directorio ``/lib/utils/``, su funcion es la de leer el archivo Json que se utiliza como Data Base. Este archivo tiene su respectiva prueba dentro del directorio ``/test/utils/Reader.test.js``.
+- Reader: Dentro de el directorio ``/lib/utils/``, su funcion es la de leer el archivo Json que se utiliza como Data Base. Este archivo tiene su respectiva prueba dentro del directorio ``/test/utils/Reader.test.js``
 
 ```javascript
-static readJsonFile(path) {
+    static readJsonFile(path) {
         const rawdata = fs.readFileSync(path);
         return JSON.parse(rawdata);
     }
 ```
 
-- ThinkingServices: Ubicado en el directorio ``/lib/services/``, se encarga de implementar la lógica requerida para manejar la información
+- ThinkingServices: Ubicado en el directorio ``/lib/services/``, se encarga de implementar la lógica requerida para manejar la información. Las pruebas se realizan en el archivo ``/test/services/ThinkingServices.test.js``
 
 ```javascript
-static getAllStudents(dataBase) {
+    static getAllStudents(dataBase) {
         const allStudents = dataBase;
         return allStudents;
     }
@@ -73,6 +73,27 @@ static getAllStudents(dataBase) {
     static isItEnough(dataBase) {
         const enoughCredits = dataBase.filter((itsEnough) => itsEnough.credits > 500);
         return enoughCredits
+    }
+```
+
+- ThinkingController: Ubicado en el directorio ``/lib/controllers/`` es el puerto de enlace entre las funciones del codigo en ``ThinkingServices.js`` y la base de datos que utilizamos, que ene ste caso es ``visualpartners.json``
+Las pruebas para este archivo se realizan en ``/test/controllers/ThinkingController.test.js``
+
+```javascript
+static getStudents() {
+        const thinkers = Reader.readJsonFile("visualpartners.json");
+        const students = ThinkingServices.getAllStudents(thinkers);
+        return students;
+    }
+    static getCertified() {
+        const thinkers = Reader.readJsonFile("visualpartners.json");
+        const certificate = ThinkingServices.getAllCertificate(thinkers);
+        return certificate;
+    }
+    static isEnough(credits) {
+        const thinkers = Reader.readJsonFile("visualpartners.json");
+        const overIt = ThinkingServices.isItEnough(thinkers, credits);
+        return overIt;
     }
 ```
 
